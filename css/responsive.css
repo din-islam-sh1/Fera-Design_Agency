@@ -1,0 +1,212 @@
+@media only screen and (max-width:991.98px) {
+    #header .header-menu, #header .header-right {
+        display: none;
+    }
+    #hero .hero-text-sec {
+        margin-top: 200px;
+      }
+
+}
+
+@media (max-width: 575.98px) {  
+  
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #hero {
+        height: auto;
+    }
+
+    #hero::before {
+        opacity: 0;
+    }
+
+    #hero .hero-text-sec .hero-title h1 {
+        font-size: 35px;
+    }  
+
+    #hero .hero-text-sec .hero-btn a {
+        padding: 12px 19px;
+    }
+
+      #hero .hero-text-sec .hero-details p {
+        font-size: 15px;
+    }
+    
+    #hero .hero-img-sec {
+        margin-top: 105px;
+      }
+
+      #solution {
+        padding-top: 115px;
+        padding-bottom: 90px;
+      }
+
+      #solution .solution-top-sec .solution-top-title h2 {
+        font-size: 35px;
+    }
+
+    #solution .solution-top-sec .solution-top-details p {
+        margin: 11px 15px 55px 15px;
+    }
+
+    #solution .solution-bottom-sec .solution-bottom-item-box .solution-item-btn {
+        margin-bottom: 35px;
+    }  
+    
+    #solution .solution-bottom-sec .solution-bottom-item-box .solution-item-desc {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+
+      #solution .solution-bottom-sec .solution-bottom-item-box .solution-item-btn a {
+        padding: 10px;
+        padding: 10px;
+    }  
+    
+    #choose {
+        padding-bottom: 45px;
+    }
+
+    #choose .choose-text-sec .choose-title h2 {
+        font-size: 35px;
+    }
+
+    #choose .choose-text-sec .choose-us-reasons-sec .choose-reason .choose-reason-title h3 {
+        font-size: 21px;
+    }
+
+    #choose .choose-text-sec .choose-us-reasons-sec .choose-reason .choose-reason-details p {
+        margin-right: 30px;
+    }
+
+    #choose .choose-img-sec .choose-img-profile img {
+        height: auto;
+        left: -55px;
+    }
+
+    #feature .feature-info-sec .feature-info-title h2 {
+        font-size: 35px;
+        padding-top: 5px;
+    }
+
+    #feature::after {
+        left: -25%;
+        height: 100%;
+        width: 141%;
+    }
+
+    #feature .feature-info-sec .feature-info-desc p {
+        padding: 15px 15px 55px 15px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.97px) { 
+
+    #hero .hero-text-sec .hero-title h1 {
+        font-size: 40px;
+    }  
+
+    #hero .hero-text-sec .hero-btn a {
+        padding: 12px 19px;
+    }
+
+      #hero .hero-text-sec .hero-details p {
+        font-size: 15px;
+    }
+    
+    #hero .hero-img-sec {
+        margin-top: 215px;
+      }
+
+      #solution {
+        padding-top: 115px;
+        padding-bottom: 90px;
+      }
+
+      #solution .solution-top-sec .solution-top-title h2 {
+        font-size: 40px;
+    }
+
+    #solution .solution-top-sec .solution-top-details p {
+        margin: 11px 15px 55px 15px;
+    }
+
+    #solution .solution-bottom-sec .solution-bottom-item-box .solution-item-btn {
+        margin-bottom: 35px;
+    }
+
+    #choose .choose-text-sec .choose-title h2 {
+        font-size: 40px;
+    }
+
+    #choose .choose-text-sec .choose-us-reasons-sec .choose-reason .choose-reason-title h3 {
+        font-size: 21px;
+    }
+
+    #choose .choose-text-sec .choose-us-reasons-sec .choose-reason .choose-reason-details p {
+        margin-right: 0px;
+    }
+
+    #choose .choose-img-sec .choose-img-pc img {
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    #choose .choose-img-sec .choose-img-profile img {
+        width: 100%;
+        height: auto;
+        top: 173px;
+        left: -70px;
+    }
+
+    #feature .feature-info-sec .feature-info-title h2 {
+        font-size: 40px;
+        padding-top: 5px;
+    }
+
+    #feature .feature-info-sec .feature-info-desc p {
+        padding: 15px 15px 55px 15px;
+    }
+
+    #feature .feature-item-sec .feature-item-img {
+        width: 230px;
+        height: 170px;
+    }
+
+    #feature .feature-item-sec .feature-item-img img {
+        height: 110%;
+        width: 100%;
+    }
+
+    #feature .feature-item-sec .feature-item-box .feature-item-title h4 {
+        font-size: 16px;
+    }
+
+    #feature .feature-item-sec .feature-item-box .feature-item-details p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #testimonial-wrapper #testimonial .testimonial-title h2 {
+        font-size: 40px;
+    }
+
+    #testimonial-wrapper #testimonial .testimonial-details p {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    #footer .footer-address, #footer .footer-services, #footer .footer-necessary-links, #footer .footer-cta {
+        margin-top: 75px;
+        margin-bottom: 25px;
+    }
+
+    #feature .feature-item-sec .feature-item-box .feature-item-img {
+        padding-top: 35px;
+    }
+
+      
+}
+
