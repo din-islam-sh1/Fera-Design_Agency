@@ -1,0 +1,729 @@
+/* Common SCSS starts */
+@import '_common.scss';
+/* Common SCSS ends */
+ 
+/* Google fonts SCSS starts */
+@import '_fonts.scss';
+/* Google fonts SCSS ends */
+
+// Variables SCSS 
+@import '_variable.scss';
+
+// Mixin SCSS
+@import '_mixin.scss';
+
+
+
+
+
+/* Header - section starts */
+#header {
+    // position: fixed;
+    z-index: 99;
+
+    .header-responsive {
+        display: none;
+    }
+
+    .header-menu, .header-right {
+        display: block;
+    }
+
+    .header-menu {
+        text-align: right;
+        padding-top: 45px;
+
+        ul {
+            li {
+                display: inline-block;
+
+                a {
+                    font-family: "Nunito Sans Regular";
+                    font-size: 18px;
+                    font-weight: 400;
+                    padding-right: 15px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .header-right {
+        padding-top: 45px;
+        display: flex;
+        justify-content: flex-end;
+
+        .header-search {
+            padding-right: 15px;
+
+            img {
+                height: 25px;
+                width: 25px;
+                cursor: pointer;
+            }
+
+            .header-search-window {
+                background-color: #7F53E0;
+                width: 0%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                transition-duration: 0.9s;
+                overflow: hidden;
+
+                .header-search-box{
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 145px;
+                    background-color: #ffffff;
+                    width: 70%;
+                    height: 60px;
+
+                    input {
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    padding: 15px;
+
+                        &:focus {
+                            background-color: #d973be6e;
+                        }
+                    }
+                }
+
+                .header-search-close-icon {
+                    img {
+                        position: absolute;
+                        top: 55px;
+                        right: 155px;
+                        height: 45px;
+                        width: 45px;
+                    }
+                }
+            }
+        }
+
+        .header-btn {
+            a {
+                font-family: "Nunito Sans Regular";
+                font-size: 18px;
+                font-weight: 400;
+                color: #000000;
+                background-color: #ffffff;
+                padding: 20px 40px;
+                border: 2px solid transparent;
+                border-radius: 25px;
+                -webkit-border-radius: 35px;
+                -moz-border-radius: 25px;
+                -ms-border-radius: 25px;
+                -o-border-radius: 25px;
+                transition: 0.7s ease-in-out;
+                -webkit-transition: 0.7s ease-in-out;
+                -moz-transition: 0.7s ease-in-out;
+                -ms-transition: 0.7s ease-in-out;
+                -o-transition: 0.7s ease-in-out;
+
+                &:hover {
+                    color: #ffffff;
+                    background-color: transparent;
+                    border: 2px solid #ffffff;
+                }
+            }
+        }
+    }
+}
+
+/* Header - section ends */
+
+
+/* Hero - section starts */
+#hero {
+    height: 105vh;
+    top: 0;
+    left: 0;
+    background: url('../images/hero/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -365px;
+        left: -335px;
+        width: 100%;
+        height: 100%;
+        background: url('../images/common-imgs/Round-circles.png');
+        background-repeat: no-repeat;
+    }
+
+    .hero-text-sec {
+        margin-top: 245px;
+
+        .hero-title {
+            h1 {
+                color: #ffffff;
+                font-family: "Rubik Extrabold";
+                font-weight: 700;
+                font-size: 55px;
+            }
+        }
+
+        .hero-details {
+            p {
+                color: #ffffff;
+                font-family: "Open Sans Medium";
+                font-weight: 400;
+                font-size: 21px;
+                padding-bottom: 15px;
+            }
+        }
+
+        .hero-btn {
+            a {
+                background-color: #ffffff;
+                padding: 20px 25px;
+                border-radius: 35px;
+                -webkit-border-radius: 35px;
+                -moz-border-radius: 35px;
+                -ms-border-radius: 35px;
+                -o-border-radius: 35px;
+
+                span {
+                    font-family: "Nunito Sans Regular";
+                    font-weight: 400;
+                    font-size: 17px;
+                    color: #000000;
+                }
+
+                img {
+                    height: 25px;
+                    width: 35px;
+                    margin-bottom: 5px;
+                    margin-left: 9px;
+                }
+            }
+        }
+    }
+
+    .hero-img-sec {
+        margin-top: 157px;
+
+        img {
+            width: 111%;
+        }
+    }
+}
+
+/* Hero - section ends */
+
+
+/* Solution - section starts */
+#solution {
+    text-align: center;
+    padding-top: 215px;
+    padding-bottom: 167px;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('../images/common-imgs/Round-circle-2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .solution-top-sec {
+        .solution-top-title {
+            h2 {
+                color: #0C2533;
+                font-family: "Nunito Sans Bold";
+                font-weight: 700;
+                font-size: 55px;
+            }
+        }
+
+        .solution-top-details {
+            p {
+                font-family: "Nunito Sans Regular";
+                font-weight: 400;
+                font-size: 18px;
+                color: $paragraphColor;
+                margin: 11px 195px 61px 195px;
+            }
+        }
+    }
+
+    .solution-bottom-sec {
+        .solution-bottom-item-box {
+
+            .solution-item-title {
+                h3 {
+                    color: $titleColor;
+                    font-family: "Nunito Sans Bold";
+                    font-weight: 700;
+                    font-size: 19px;
+                    margin-top: 21px;
+                }
+            }
+
+            .solution-item-desc {
+                color: $paragraphColor;
+                font-family: "Nunito Sans Regular";
+                font-weight: 400;
+                font-size: 18px;
+            }
+
+            .solution-item-btn {
+                margin-top: 25px;
+
+                a {
+                    padding: 15px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+
+                    span {
+                        font-family: "Nunito Sans Semibold";
+                        font-weight: 600;
+                        font-size: 17px;
+                        color: $titleColor;
+                    }
+
+                    img {
+                        padding-left: 15px;
+                        transform: translateX(0);
+                        -webkit-transform: translateX(0);
+                        -moz-transform: translateX(0);
+                        -ms-transform: translateX(0);
+                        -o-transform: translateX(0);
+                    }
+
+                    &:hover {
+                        img {
+                            transform: translateX(5px);
+                            -webkit-transform: translateX(5px);
+                            -moz-transform: translateX(5px);
+                            -ms-transform: translateX(5px);
+                            -o-transform: translateX(5px);
+                        }
+                    }
+                }
+
+                .item-btn-one {
+                    border: 2px dotted #0060CD;
+                }
+
+                .item-btn-two {
+                    border: 2px dotted #D973BD;
+                }
+
+                .item-btn-three {
+                    border: 2px dotted #FD8F00;
+                }
+
+                .item-btn-four {
+                    border: 2px dotted #04DB8B;
+                }
+            }
+        }
+    }
+}
+
+/* Solution - section ends */
+
+
+/* Choose - section starts */
+#choose {
+    background-color: rgba(1, 97, 205, 0.03);
+
+    // *Choose - section's texts part*
+    .choose-text-sec {
+        padding-top: 105px;
+
+        .choose-title {
+            h2 {
+                @include section-title;
+            }
+        }
+
+        .choose-desc {
+            p {
+                @include section-paragraph;
+            }
+        }
+
+        .choose-us-reasons-sec {
+            margin-top: 41px;
+
+            .choose-reason {
+                .choose-reason-title {
+                    h3 {
+                        @include section-title;
+                        font-size: 25px;
+                        margin-top: 15px;
+                    }
+                }
+
+                .choose-reason-details {
+                    p {
+                        @include section-paragraph;
+                        margin-right: 202px;
+                    }
+                }
+            }
+        }
+    }
+
+    // *Choose - section's images part*
+    .choose-img-sec {
+        padding-top: 105px;
+        position: relative;
+
+        .choose-img-pc {
+            img {
+                height: auto;
+                width: 105%;
+            }
+        }
+
+        .choose-img-profile {
+            img {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 65px;
+                left: -145px;
+            }
+        }
+    }
+}
+
+/* Choose - section ends */
+
+
+/* Feature - section starts */
+#feature {
+    text-align: center;
+    margin-top: 83px;
+    margin-bottom: 93px;
+    position: relative;
+    z-index: 2;
+
+    // *Background circle image*
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 15%;
+        background: url('../images/common-imgs/Round-circle-2.png');
+        background-repeat: no-repeat;
+        // background-position: center;
+        z-index: -2;
+        height: 765px;
+        width: 900px;
+    }
+
+    // *Feature top part*
+    .feature-info-sec {
+        .feature-info-title {
+            h2 {
+                @include section-title;
+                padding-top: 135px;
+            }
+        }
+
+        .feature-info-desc {
+            p {
+                @include section-paragraph;
+                padding: 15px 195px 55px 205px;
+            }
+        }
+    }
+
+    // *Feature bottom part*
+    .feature-item-sec {
+        .feature-item-box {
+            .feature-item-title {
+                h4 {
+                    @include section-title;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    padding-top: 30px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .feature-item-details {
+                p {
+                    @include section-paragraph;
+                    line-height: 25px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .feature-item-btn {
+
+                a {
+                    padding: 15px;
+                    border: 2px dotted #089DE5;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+
+                    span {
+                        font-family: "Nunito Sans Semibold";
+                        font-weight: 600;
+                        font-size: 17px;
+                        color: $titleColor;
+                    }
+
+                    img {
+                        padding-left: 15px;
+                        transform: translateX(0);
+                        -webkit-transform: translateX(0);
+                        -moz-transform: translateX(0);
+                        -ms-transform: translateX(0);
+                        -o-transform: translateX(0);
+                    }
+
+                    &:hover {
+                        img {
+                            transform: translateX(5px);
+                            -webkit-transform: translateX(5px);
+                            -moz-transform: translateX(5px);
+                            -ms-transform: translateX(5px);
+                            -o-transform: translateX(5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Feature - section ends */
+
+
+/* Testimonial - section starts */
+#testimonial-wrapper {
+    background-color: rgba(1, 97, 205, 0.03);
+    position: relative;
+
+        // * Testimonial background images part starts
+        &::before {
+            content: '';
+            position: absolute;
+            top: 85px;
+            left: 0;
+            height: 100%;
+            width: 345px;
+            background-image: url('../images/testimonial/half-circle.png');
+            background-repeat: no-repeat;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: -15px;
+            right: 0;
+            height: 100%;
+            width: 255px;
+            background-image: url('../images/testimonial/half-circle.png');
+            background-repeat: no-repeat;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+        // * Testimonial background images part ends    
+
+    #testimonial {
+        padding: 89px 25px;
+        position: relative;
+
+        // * slick slider's arrow part starts
+        .testimonial-slick-arrow {
+            position: absolute;
+            bottom: -33px;
+            height: 55px;
+            width: 55px;
+            background-color: transparent;
+            border: none;
+            z-index: 7;
+        }
+
+        .slick-prev-arrow {
+            right: 115px;
+        }
+
+        .slick-next-arrow {
+            right: 55px;
+        }
+        // * slick slider's arrow part ends
+
+
+        .testimonial-title {
+            h2 {
+                @include section-title;
+                font-size: 45px;
+            }
+        }
+
+        .testimonial-client-profile {
+            margin-top: 65px;
+            padding-left: 15px;
+
+            .testimonial-client-info {
+                .client-name {
+                    font-family: "Nunito Sans Semibold";
+                    font-weight: 600;
+                    font-size: 25px;
+                    margin-top: 15px;
+                    margin-bottom: -5px;
+                }
+
+                .client-occupation {
+                    @include section-paragraph;
+                }
+            }
+        }
+
+        .testimonial-details {
+
+            p {
+                @include section-title;
+                font-size: 21px;
+                padding: 85px 85px 15px 15px;
+                position: relative;
+                z-index: 3;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 65px;
+                    right: 9px;
+                    height: 101px;
+                    width: 101px;
+                    background: url('../images/testimonial/double-quote-icon.png');
+                    background-repeat: no-repeat;
+                    z-index: -3;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+/* Testimonial - section ends */
+
+/* Footer -section starts */
+#footer {
+    background-color: #0C2533;
+
+    .footer-address, .footer-services, .footer-necessary-links, .footer-cta {
+        margin-top: 105px;
+        margin-bottom: 85px;
+
+        ul {
+            padding: 0;
+    
+            li {
+                @include section-paragraph;
+                color: #ffffff;
+                margin-bottom: 7px;
+
+                a {
+                color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .footer-address {
+        .footer-logo {
+            img {
+                height: 125px;
+                width: 315px;
+                margin-bottom: 13px; 
+            }
+        }
+    }
+     
+    .footer-services, .footer-necessary-links, .footer-cta {
+        h4 {
+            color: #ffffff;
+            font-family: "Rubik Extrabold";
+            font-weight: 800;
+            font-size: 25px;
+            margin-bottom: 21px;
+        }
+    }
+
+    .footer-cta {
+        .footer-cta-email {
+            margin-bottom: 25px;
+            border: 1px solid #808080;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            
+            input{
+                width: 100%;
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: transparent;
+                border: 1px solid transparent;
+
+                &:focus {
+                    background-color: #13EE49;
+                    border-radius: 30px;
+                    -webkit-border-radius: 30px;
+                    -moz-border-radius: 30px;
+                    -ms-border-radius: 30px;
+                    -o-border-radius: 30px;
+                }
+
+                &::placeholder {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    
+    .footer-cta-btn {
+        @include section-paragraph;
+        color: #ffffff;
+        background-color: #7850E5;
+        padding: 11px 17px;
+        border: 1px solid transparent;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+
+        &:hover {
+            border: 1px solid #7850E5;
+            background-color: transparent;
+        }
+    }
+}
+/* Footer -section ends */
+
+

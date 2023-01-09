@@ -1,0 +1,13 @@
+@mixin section-title {
+    color: #0C2533;
+    font-family: "Nunito Sans Bold";
+    font-weight: 700;
+    font-size: 55px;
+}
+
+@mixin section-paragraph {
+    font-family: "Nunito Sans Regular";
+    font-weight: 400;
+    font-size: 18px;
+    color: $paragraphColor;
+}
